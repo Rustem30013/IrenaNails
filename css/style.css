@@ -363,7 +363,7 @@
 }
 @media (max-width: 767px) {
   .gallery_area .single_gallery.small_img {
-    width: 350px;
+    width: 300px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -376,7 +376,7 @@
 }
 @media (max-width: 767px) {
   .gallery_area .single_gallery.big_img {
-    width: 350px;
+    width: 300px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -386,7 +386,7 @@
 }
 @media (max-width: 767px) {
   .gallery_area .single_gallery.big_img {
-    width: 350px;
+    width: 300px;
   }
 }
 .gallery_area .single_gallery:hover::before {
