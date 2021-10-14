@@ -30,7 +30,7 @@
         welcomeSlider.owlCarousel({
             items: 1,
             loop: true,
-            autoplay: true,
+            autoplay: false,
             smartSpeed: 1500
         })
         welcomeSlider.on('translate.owl.carousel', function () {
@@ -195,5 +195,13 @@
             $(this).html(event.strftime("<div>%D <span>Days</span></div> <div>%H <span>Hours</span></div> <div>%M <span>Minutes</span></div> <div>%S <span>Seconds</span></div>"));
         });
     }
+    $('a[href^="#"').on('click', function() {
 
+        let href = $(this).attr('href');
+    
+        $('html, body').animate({
+            scrollTop: $(href).offset().top
+        });
+        return false;
+    });
 })(jQuery);

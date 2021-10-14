@@ -247,7 +247,7 @@
 }
 .single-welcome-slide .welcome-text {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 .single-welcome-slide .welcome-text h2 {
   font-size: 72px;
@@ -363,7 +363,7 @@
 }
 @media (max-width: 767px) {
   .gallery_area .single_gallery.small_img {
-    width: 100%;
+    width: 350px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -376,7 +376,7 @@
 }
 @media (max-width: 767px) {
   .gallery_area .single_gallery.big_img {
-    width: 100%;
+    width: 350px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -386,7 +386,7 @@
 }
 @media (max-width: 767px) {
   .gallery_area .single_gallery.big_img {
-    width: 100%;
+    width: 350px;
   }
 }
 .gallery_area .single_gallery:hover::before {
