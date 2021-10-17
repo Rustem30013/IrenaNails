@@ -60,7 +60,7 @@
         &.small_img{
             width: 30%;
             @media #{$mobile_device} {
-                width: 350px;
+                width: 300px;
             }
             @media #{$tablet_device}{
                 width: 50%;
@@ -69,13 +69,13 @@
         &.big_img{
            width: 40%;
            @media #{$mobile_device} {
-                width: 350px;
+                width: 300px;
         }
         @media #{$tablet_device}{
             width: 50%;
         }
            @media #{$mobile_device} {
-                width: 350px;
+                width: 300px;
            }
         }
         &:nth-child(3){

@@ -1,65 +1,36 @@
 /* :: 7.0 Header CSS */
 
-.header-area {
-    position: relative;
-    z-index: 10;
-    width: 100%;
-    @include transition-duration(500ms);
-    border-bottom: 1px solid $border;
-
-    .top-header-area {
-        position: relative;
-        z-index: 1;
-        background-color: $heading;
-        width: 100%;
-        height: 50px;
-        
-        @media #{$breakpoint-xs} {
-            height: auto;
-            padding: 15px 0;
-        }
-
-        .top-header-content {
-            p {
-                margin-bottom: 0;
-                font-size: 14px;
-                color: $white;
-
-                @media #{$breakpoint-md} {
-                    font-size: 12px;
-                }
-                
-                @media #{$breakpoint-xs} {
-                    font-size: 10px;
-                }
-            }
-        }
-    }
-
-    .cart-icon a {
-
-        &:focus,
-        &:hover {
-            color: $hover;
-        }
-    }
-}
-
 .classy-nav-container {
     background-color: transparent;
     padding: 0;
 
+    .top-header-content{
+        p,div,ul{
+            @media #{$breakpoint-xs} {
+                font-size: 12px;
+            }
+        }
+        .logo img{
+            width: 100px;
+            padding: 5px;
+        }
+        .logoinst img{
+            width: 30px
+        }
+    }
     .classy-navbar {
         @include transition-duration(500ms);
         height: 100px;
         padding: 0;
+
+        
 
         @media #{$breakpoint-md} {
             height: 70px;
         }
 
         @media #{$breakpoint-xs} {
-            height: 70px;
+            height: 100px;
         }
 
         .nav-brand {

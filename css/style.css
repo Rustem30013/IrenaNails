@@ -13,49 +13,21 @@
 /* small mobile :320px. */
 /* Large Mobile :480px. */
 /* :: 7.0 Header CSS */
-.header-area {
-  position: relative;
-  z-index: 10;
-  width: 100%;
-  -webkit-transition-duration: 500ms;
-  transition-duration: 500ms;
-  border-bottom: 1px solid #e5e5e5;
-}
-.header-area .top-header-area {
-  position: relative;
-  z-index: 1;
-  background-color: #252525;
-  width: 100%;
-  height: 50px;
-}
-@media only screen and (max-width:767px) {
-  .header-area .top-header-area {
-    height: auto;
-    padding: 15px 0;
-  }
-}
-.header-area .top-header-area .top-header-content p {
-  margin-bottom: 0;
-  font-size: 14px;
-  color: #ffffff;
-}
-@media only screen and (min-width:768px) and (max-width:991px) {
-  .header-area .top-header-area .top-header-content p {
-    font-size: 12px;
-  }
-}
-@media only screen and (max-width:767px) {
-  .header-area .top-header-area .top-header-content p {
-    font-size: 10px;
-  }
-}
-.header-area .cart-icon a:focus, .header-area .cart-icon a:hover {
-  color: #bca858;
-}
-
 .classy-nav-container {
   background-color: transparent;
   padding: 0;
+}
+@media only screen and (max-width:767px) {
+  .classy-nav-container .top-header-content p, .classy-nav-container .top-header-content div, .classy-nav-container .top-header-content ul {
+    font-size: 12px;
+  }
+}
+.classy-nav-container .top-header-content .logo img {
+  width: 100px;
+  padding: 5px;
+}
+.classy-nav-container .top-header-content .logoinst img {
+  width: 30px;
 }
 .classy-nav-container .classy-navbar {
   -webkit-transition-duration: 500ms;
@@ -70,7 +42,7 @@
 }
 @media only screen and (max-width:767px) {
   .classy-nav-container .classy-navbar {
-    height: 70px;
+    height: 100px;
   }
 }
 @media only screen and (max-width:767px) {
