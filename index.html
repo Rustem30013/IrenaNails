@@ -7,6 +7,8 @@
     <title>IrenaNails</title>
     <link rel="stylesheet" href="css/style.css">
 
+
+
     <style>
         .bd-placeholder-img {
           font-size: 1.125rem;
@@ -38,7 +40,6 @@
                             <div class="logo">
                                 <img src="./img/icons/logo.jpg" alt="irenaNeils">
                             </div>
-                            <!-- <p>IrenaNails</p> -->
                         </div>
                         <div class="top-header-content text-center">
                             <div class="row ">
@@ -46,7 +47,7 @@
                                 <div class="w-100"></div>
                                 <div class="col">ПН-ВС: 9.00 до 17.00 </div>
                                 <div class="w-100"></div>
-                                <div class="col">Телефон: 89655925081</div>
+                                <div class="col">Телефон: <a href="tel:89655925081">89655925081</a></div> 
                             </div>
                         </div>
                         
@@ -65,10 +66,10 @@
                             <div class="classynav">
                                 <ul id="nav">
                                     <li class="active"><a href="./index.html">Главная</a></li>
-                                    <li><a href="./service.html">О нас</a></li>
-                                    <li><a href="./about.html">Услуги</a></li>
-                                    <li><a href="./blog.html">Мои работы</a></li>
-                                    <li><a href="./contact.html">Как найти</a></li>
+                                    <li><a href="#reasons">О нас</a></li>
+                                    <li><a href="#pricing">Услуги</a></li>
+                                    <li><a href="#gallery">Мои работы</a></li>
+                                    <li><a href="#footer">Как найти</a></li>
                                 </ul>
                             </div>
                             <!-- Nav End -->
@@ -79,42 +80,17 @@
         </div>
     </header>
     <!-- Header Area End -->
-        <!-- Welcome Area Start -->
-    <section class="welcome-area">
-        <div class="welcome-slides owl-carousel">
-            <!-- Single Welcome Slide -->
-            <div class="single-welcome-slide bg-img" style="background-image: url(img/bg/welcome-bg1.jpg);">
-                <!-- Welcome Content -->
-                <div class="welcome-content h-100">
-                    <div class="container h-100">
-                        <div class="row h-100 align-items-center">
-                            <!-- Welcome Text -->
-                            <div class="col-12 col-md-9 col-lg-6">
-                                <div class="welcome-text">
-                                    <h2 data-animation="fadeInUp" data-delay="100ms">Приведи подругу получи скидку 15%</h2>
-                                    <p data-animation="fadeInUp" data-delay="400ms">Скидка 15% за каждого человека который придет по вашей рекомендации.</p>
-                                    <a href="#gallery" class="btn akame-btn" data-animation="fadeInUp" data-delay="700ms">Посмотреть работы</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Single Welcome Slide -->
-            <div class="single-welcome-slide bg-img" style="background-image: url(img/bg/welcome-bg2.jpg);">
-                <!-- Welcome Content -->
-                <div class="welcome-content h-100">
-                    <div class="container h-100">
-                        <div class="row h-100 align-items-center">
-                            <!-- Welcome Text -->
-                            <div class="col-12 col-md-9 col-lg-6">
-                                <div class="welcome-text">
-                                    <h2 data-animation="fadeInUp" data-delay="100ms">We Care About <br> Your Hair</h2>
-                                    <p data-animation="fadeInUp" data-delay="400ms">“Discover your own style. Don't try to repeat what has already been written - have the courage to do your own thing and don't be afraid to do something different.”</p>
-                                    <a href="#" class="btn akame-btn active" data-animation="fadeInUp" data-delay="700ms">About Us</a>
-                                </div>
-                            </div>
+    <!-- Welcome Area Start -->
+    <section class="Welcome-area">
+        <div class="welcome-content h-100">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Welcome Text -->
+                    <div class="col-12 col-md-9 col-lg-9">
+                        <div class="welcome-text">
+                            <h2 data-animation="fadeInUp" data-delay="100ms">Приведи подругу получи скидку 15%</h2>
+                            <p data-animation="fadeInUp" data-delay="400ms">Скидка 15% за каждого человека который придет по вашей рекомендации.</p>
+                            <a href="#gallery" class="btn akame-btn" data-animation="fadeInUp" data-delay="700ms">Посмотреть работы</a>
                         </div>
                     </div>
                 </div>
@@ -127,52 +103,64 @@
             <div class="row">
                 <div class="col-xl-12">
                     <div class="section_title text-center mb-75">
-                        <h3>Photo Gallery</h3>
+                        <h3>Последние работы</h3>
                     </div>
                 </div>
             </div>
         </div>
-            <div class="single_gallery big_img">
-                <a class="popup-image" href="img/gallery/1.jpg"></a>
-                <img src="img/gallery/1.jpg" alt="">
-            </div>
-            <div class="single_gallery small_img">
-                <a class="popup-image" href="img/gallery/2.jpg"></a>
-                <img src="img/gallery/2.jpg" alt="">
-            </div>
-            <div class="single_gallery small_img">
-                <a class="popup-image" href="img/gallery/3.jpg"></a>
-                <img src="img/gallery/3.jpg" alt="">
-            </div>
 
-            <div class="single_gallery small_img">
-                <a class="popup-image" href="img/gallery/4.jpg"></a>
-                <img src="img/gallery/4.jpg" alt="">
+        <div class="section-clients__carousel">
+            <button id="sliderLeft" class="btn-slider">
+                <i class="btn-arrow-left"></i>
+            </button>
+            <button id="sliderRight" class="btn-slider">
+                <i class="btn-arrow-right"></i>
+            </button>
+            <div id="carousel1" class="owl-carousel">
+                <div class="single_gallery ">
+                    <a class="popup-image" href="img/gallery/1.jpg"></a>
+                    <img src="img/gallery/1.jpg" alt="">
+                </div>
+                <div class="single_gallery ">
+                    <a class="popup-image" href="img/gallery/2.jpg"></a>
+                    <img src="img/gallery/2.jpg" alt="">
+                </div>
+                <div class="single_gallery">
+                    <a class="popup-image" href="img/gallery/3.jpg"></a>
+                    <img src="img/gallery/3.jpg" alt="">
+                </div>
+        
+                <div class="single_gallery">
+                    <a class="popup-image" href="img/gallery/4.jpg"></a>
+                    <img src="img/gallery/4.jpg" alt="">
+                </div>
+                <div class="single_gallery">
+                    <a class="popup-image" href="img/gallery/5.jpg"></a>
+                    <img src="img/gallery/5.jpg" alt="">
+                </div>
+                <div class="single_gallery">
+                    <a class="popup-image" href="img/gallery/6.jpg"></a>
+                    <img src="img/gallery/6.jpg" alt="">
+                </div>
             </div>
-            <div class="single_gallery small_img">
-                <a class="popup-image" href="img/gallery/5.jpg"></a>
-                <img src="img/gallery/5.jpg" alt="">
-            </div>
-            <div class="single_gallery big_img">
-                <a class="popup-image" href="img/gallery/6.jpg"></a>
-                <img src="img/gallery/6.jpg" alt="">
-            </div>
+        </div>
+
+
     </section>
     <!-- Reasons Area Start -->
-    <section class="reasons">
+    <section id="reasons"class="reasons">
         <div class="container">
-            <div class="label">преимущества</div>
-            <h2 class="title"> причины прийти </h2>
+            <h2 class="title">Немного о себе </h2>
             <div class="row">
                 <div class="col-md-6">
                     <div class="reasons_block">
                         <div class="reasons_round">
-                            <img src="icons/reasons/reason_1.png" alt="reason">
+                            <img src="img/icons/heart1.png" alt="reason">
                         </div>
                         <div class="reasons_descr">
-                            <div class="reasons_subtitle">Никаких наличных, оплата происходит автоматически</div>
+                            <div class="reasons_subtitle">Я очень люблю свою работу</div>
                             <div class="reasons_text">
-                                Стоимость поездки оплачивается пассажиром с привязанной банковской карты, т.е. нет никаких рисков связанных с перевозкой наличности как для пассажира, так и для водителя, Вам не нужно искать мелкие деньги для размена.
+                                ВСегда ищу индивидуальный подход к каждому клиенту
                             </div>
                         </div>
                     </div>
@@ -180,12 +168,12 @@
                 <div class="col-md-6">
                     <div class="reasons_block">
                         <div class="reasons_round">
-                            <img src="icons/reasons/reason_2.png" alt="reason">
+                            <img src="img/icons/serv.png" alt="reason">
                         </div>
                         <div class="reasons_descr">
-                            <div class="reasons_subtitle">Комиссия 8% + БОНУСЫ</div>
+                            <div class="reasons_subtitle">Сервис</div>
                             <div class="reasons_text">
-                                У нас минимальная комиссия и мы выплачиваем бонусы за каждую поездку, некоторые наши конкуренты оставляют бонусы себе. Мы работаем честно и с нами водители зарабатывают больше!
+                                Для Вас уменя всегда всегда чай, кофе и конфетки.Приятная музыка,уютная атмосфера
                             </div>
                         </div>
                     </div>
@@ -193,12 +181,12 @@
                 <div class="col-md-6">
                     <div class="reasons_block">
                         <div class="reasons_round">
-                            <img src="icons/reasons/reason_3.png" alt="reason">
+                            <img src="img/icons/cool.png" alt="reason">
                         </div>
                         <div class="reasons_descr">
-                            <div class="reasons_subtitle">Высокий доход с гарантированными выплатами</div>
+                            <div class="reasons_subtitle">Цена+качество=гарантия</div>
                             <div class="reasons_text">
-                                Мы выплачиваем заработную плату на личную банковскую карту водителя! Вам не нужно оформлять ООО, ИП, платить налоги, подавать декларацию, оплачивать бухгалтерские услуги и ведение банковского счета.
+                                Я использую экологичные и качетсвенные материалы для работы.Интсрументы проходят тщательную обработку.Оборудование не куплино на Авито.
                             </div>
                         </div>
                     </div>
@@ -206,12 +194,38 @@
                 <div class="col-md-6">
                     <div class="reasons_block">
                         <div class="reasons_round">
-                            <img src="icons/reasons/reason_4.png" alt="reason">
+                            <img src="img/icons/choice.png" alt="reason">
                         </div>
                         <div class="reasons_descr">
-                            <div class="reasons_subtitle">Работа в удобное время, никаких графиков</div>
+                            <div class="reasons_subtitle">Выбор цветов</div>
                             <div class="reasons_text">
-                                Вы просто нажимаете кнопку выйти на линию для начала работы, когда решите закончить, нажимаете выйти с линии. Вы можете подрабатывать только утром, вечером, в выходные или праздничные дни!
+                                У меня огромный выбор цветов лаков, гель-лаков,блесток.А так же я использую стразы.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="reasons_block">
+                        <div class="reasons_round">
+                            <img src="img/icons/pallete.png" alt="reason">
+                        </div>
+                        <div class="reasons_descr">
+                            <div class="reasons_subtitle">Рисунки</div>
+                            <div class="reasons_text">
+                                Все рисунки выполняю только вручную.У Вас будет именно тот дизайн, который Вы захотите.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="reasons_block">
+                        <div class="reasons_round">
+                            <img src="img/icons/doc.png" alt="reason">
+                        </div>
+                        <div class="reasons_descr">
+                            <div class="reasons_subtitle">Запись</div>
+                            <div class="reasons_text">
+                                Удобная запись, всегда найду время чтобы принять Вас.
                             </div>
                         </div>
                     </div>
@@ -221,10 +235,11 @@
     </section>
     <!-- Reasons Area End -->
     <!-- Pricing Area Start -->
-    <section class="pricing">
+    <section  id="pricing"class="pricing">
+        <h2 class="title">Мои услуги</h2>
         <div class="container py-3">
               <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-                <div class="col">
+                <div class="col-sm-12">
                   <div class="card mb-4 rounded-3 shadow-sm">
                     <div class="card-header py-3">
                       <h4 class="my-0 fw-normal">Маникюр</h4>
@@ -240,7 +255,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col">
+                <div class="col-sm-12">
                   <div class="card mb-4 rounded-3 shadow-sm">
                     <div class="card-header py-3">
                       <h4 class="my-0 fw-normal"> Гель-лак</h4>
@@ -257,7 +272,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col">
+                <div class="col-sm-12">
                   <div class="card mb-4 rounded-3 shadow-sm border-primary">
                     <div class="card-header py-3 text-white bg-primary border-primary">
                       <h4 class="my-0 fw-normal">Доп услуги</h4>
@@ -290,13 +305,13 @@
                 <h3 class="section-header">Что говорят пользователи</h3>
             </div>
             <div class="section-clients__carousel">
-                <button id="sliderLeft" class="btn-slider">
+                <button id="sliderLeftClients" class="btn-slider">
                     <i class="btn-arrow-left"></i>
                 </button>
-                <button id="sliderRight" class="btn-slider">
+                <button id="sliderRightClients" class="btn-slider">
                     <i class="btn-arrow-right"></i>
                 </button>
-                <div id="carousel1" class="owl-carousel">
+                <div id="carousel2" class="owl-carousel">
                     <!-- user -->
                     <div>
                         <div class="owl-carousel__comment">
@@ -343,10 +358,82 @@
             </div>
         </div>
     </section>
-    <!-- Reviews Area Start -->
-
+    <!-- Questions Area Start -->
+    <section class="Questions">
+        <div class="container">
+            <div class="row">
+                <div id="accordion" class="accordion">
+                    <div class=" col-12 accordion-item show">
+                      <div class="accordion-item-header">
+                        Какая обработка ногтей лучше?
+                      </div>
+                      <div class="accordion-item-content">
+                        <p>Точно сказать нельзя, так как каждый сам выбирает для себя по мере своей чувствительности и удобства.</p>
+⠀
+                        <p>Аппаратный. Самый популярный у нас способ обработки, каким пользуюсь и я. Такой маникюр позволяет ногтям надолго сохранить красивый и ухоженный вид.</p>
+⠀
+                        <p>Классический. Кутикула при такой процедуре обрезается ножницами. Перед этим применяют ванночки с размягчающим раствором.</p>
+⠀
+                        <p>Европейский. Ороговевшую ткань вокруг ногтевой пластины удаляют стеклянной палочкой. Кутикула отодвигается деревянной лопаткой. На ноготь наносится фруктовое масло.Чем чаще производить процедуру, тем быстрее ваши ноготки запомнят правильную форму и перестанут зарастать.</p>
+                      </div>
+                    </div>
+                    <div class=" col-12 accordion-item">
+                      <div class="accordion-item-header">
+                        Вреден ли гель-лак?
+                      </div>
+                      <div class="accordion-item-content">
+                        <p>Чтобы гель-лак не испортил ногти, должны соблюдаться 2 нюанса.</p>
+                        <p>• Материал для покрытия должен быть качественным</p>
+                        <p>•Должна быть соблюдена техника нанесения и снятия гель-лакового покрытия.</p>
+                      </div> 
+                    </div>
+                    <div class=" col-12 accordion-item">
+                        <div class="accordion-item-header">
+                          Безопасно ли во время беременности покрывать ногти?
+                        </div>
+                        <div class="accordion-item-content">
+                            <p>Запрета нет, но осторожность не помешает. Беременность усиливает аллергические реакции, причем на ранее безобидные вещества. Также при обработке образуется пыль, которую вдыхать нежелательно, следует одевать маску.</p>
+                        </div>
+                    </div>
+                    <div class=" col-12 accordion-item">
+                        <div class="accordion-item-header">
+                            Сколько времени можно ходить с покрытием?
+                        </div>
+                        <div class="accordion-item-content">
+                            <p>Технологи не советуют носить лак дольше 2-3 недель.Отросшие ногти — это неудобно, не эстетично, также чем они больше отрастают, тем больше риск сломать ноготки.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Questions Area End -->
+    <!-- suggestions Area End -->
+    <section class="suggestions">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h2>Интересные предложения</h2> 
+                </div>     
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class=" col-sm-12 col-md-4">
+                        <img src="./img/suggestions/sug-1.jpg" alt="">
+                    </div>
+                    <div class=" col-sm-12 col-md-4">
+                        <img src="./img/suggestions/sug-2.jpg" alt="">
+                    </div>
+                    <div class=" col-sm-12 col-md-4">
+                        <img src="./img/suggestions/sug-3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- suggestions Area End -->
     <!-- Footer Area Start -->
-    <footer class="footer-area section-padding-80-0">
+    <footer id="footer"class="footer-area section-padding-80-0">
         <div class="container">
             <div class="row justify-content-between">
 
@@ -405,8 +492,11 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- All Plugins -->
     <script src="js/akame.bundle.js"></script>
+    <!-- accardion.js -->
+    <script src="js/accordion.js"></script>
     <!-- Active -->
     <script src="js/default-assets/active.js"></script>
+
 
 </body>
 </html>

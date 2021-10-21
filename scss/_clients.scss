@@ -187,17 +187,17 @@
 	}
 }
 
-#sliderLeft {
+#sliderLeft, #sliderLeftClients{
 	margin-right: 40px;
 
 	//Медиа для планшетов и выше
-	@media (min-width: 768px) {
-		order: 1;
-		margin-right: 0;
-	}
+	// @media (min-width: 768px) {
+	// 	order: 1;
+	// 	margin-right: 0;
+	// }
 }
 
-#sliderRight {
+#sliderRight, #sliderRightClients{
 	@media (min-width: 768px) {
 		order: 3;
 	}
