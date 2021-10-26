@@ -486,7 +486,7 @@ body {
 }
 
 .card .card-header {
-  background-color: #f5ed9354;
+  background: linear-gradient(45deg, #EECFBA, #C5DDE8);
 }
 .card h4 {
   font-size: 18px;
@@ -828,8 +828,14 @@ body {
   padding: 0px 0px 30px 0px;
 }
 .suggestions img {
-  -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.425);
+          box-shadow: 0 8px 15px rgba(0, 0, 0, 0.425);
+}
+@media only screen and (max-width:767px) {
+  .suggestions img {
+    margin-bottom: 5px;
+  }
 }
 
 .footer-area {
@@ -837,11 +843,11 @@ body {
   padding-bottom: 30px;
   background-color: #1f1a1a;
 }
-.footer-area map {
-  max-width: 400px;
+.footer-area .map {
+  width: 300px;
 }
 .footer-area .time_ardess {
-  max-width: 400px;
+  max-width: 300px;
 }
 .footer-area .contacts {
   max-width: 400px;
