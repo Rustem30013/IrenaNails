@@ -8,25 +8,23 @@
 }
 .accordion-item-header {
   padding: 10px 15px;
-  background: #f5ed9354;
   color: rgb(26, 17, 17);
   cursor: pointer;
 }
 .accordion-item-content {
   background: #fff;
-  transition: padding .4s ease-out;
+  transition: padding .3s ease-out;
   visibility: hidden;
   height: 0;
   opacity: 0;
 }
 .accordion-item.show .accordion-item-content {
-  padding: 10px 0px;
+  padding: 5px 0px 0px 5px;
   visibility: visible;
   height: auto;
   opacity: 1;
 }
 .accordion-item.show .accordion-item-header {
-  background: #f5ed9354;
   color: rgb(26, 17, 17);
   border-bottom: 1px solid #ddd;
 }
