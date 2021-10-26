@@ -1,0 +1,285 @@
+
+
+.section-clients {
+	position: relative;
+	padding: 74px 0 50px;
+
+	//Медиа для планшетов и выше
+	@media (min-width: 768px) {
+		padding: 75px 0 15px;
+	}
+
+	//Медиа для десктопов
+	@media (min-width: 1200px) {
+		padding: 108px 0 55px;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 20px;
+			right: 0;
+			bottom: 0;
+
+			background-image: url("../../img/users/bg.svg");
+			background-position: center 156px;
+			background-repeat: no-repeat;
+		}
+	}
+}
+
+.section-clients__titles {
+	text-align: center;
+
+	> h2 {
+		margin-bottom: 37px;
+		font-size: 16px;
+
+		//Медиа для планшетов и выше
+		@media (min-width: 768px) {
+			margin-bottom: 24px;
+		}
+
+		//Медиа для десктопов
+		@media (min-width: 1200px) {
+			margin-bottom: 73px;
+			font-size: 14px;
+		}
+	}
+
+	> h3 {
+		margin-bottom: 33px;
+
+		//Медиа для планшетов и выше
+		@media (min-width: 768px) {
+			margin-bottom: 65px;
+		}
+
+		//Медиа для десктопов
+		@media (min-width: 1200px) {
+			margin-bottom: 82px;
+		}
+	}
+}
+
+.section-clients__carousel {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+
+	position: relative;
+	margin-bottom: 25px;
+
+	//Медиа для планшетов и выше
+	@media (min-width: 768px) {
+		flex-direction: row;
+		flex-wrap: nowrap;
+		align-items: flex-start;
+	}
+}
+
+#carousel1 {
+	justify-self: stretch;
+	order: -1;
+	padding: 0 10px;
+
+	//Медиа для планшетов и выше
+	@media (min-width: 768px) {
+		order: 2;
+		max-width: 550px;
+		margin: 0 40px;
+	}
+
+	//Медиа для десктопов
+	@media (min-width: 1200px) {
+		max-width: 770px;
+		margin: 0 40px;
+	}
+}
+
+.btn-slider {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 52px;
+	height: 52px;
+
+	border: none;
+	border-radius: 50%;
+	background: linear-gradient(45deg, #EECFBA, #C5DDE8);
+
+	// background-color: #f5ed9354;
+
+	transition: .2s ease;
+
+	//Медиа для планшетов и выше
+	@media (min-width: 768px) {
+		margin-top: 14px;
+	}
+
+	&:focus,
+	&:hover {
+		outline: none;
+		background-color: #3a413e;
+
+		i,
+		i:before {
+			border-color: #fff;
+		}
+	}
+}
+
+.btn-arrow-left {
+	position: relative;
+
+	display: inline-block;
+	padding: 6px;
+
+	border: solid $gray;
+	border-width: 2px 0 0 2px;
+	transform: rotate(-45deg);
+
+	transition: .2s ease;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 2px;
+		left: -10px;
+
+		display: inline-block;
+		padding: 9px;
+
+		border: solid $gray;
+		border-width: 2px 0 0 0;
+		transform: rotate(45deg);
+
+		transition: .2s ease;
+	}
+}
+
+.btn-arrow-right {
+	position: relative;
+
+	display: inline-block;
+	padding: 6px;
+
+	border: solid $gray;
+	border-width: 2px 2px 0 0;
+	transform: rotate(45deg);
+
+	transition: .2s ease;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 2px;
+		right: -10px;
+
+		display: inline-block;
+		padding: 9px;
+
+		border: solid $gray;
+		border-width: 2px 0 0 0;
+		transform: rotate(-45deg);
+
+		transition: .2s ease;
+	}
+}
+
+#sliderLeft, #sliderLeftClients{
+	margin-right: 40px;
+
+	//Медиа для планшетов и выше
+	// @media (min-width: 768px) {
+	// 	order: 1;
+	// 	margin-right: 0;
+	// }
+}
+
+#sliderRight, #sliderRightClients{
+	@media (min-width: 768px) {
+		order: 3;
+	}
+}
+
+.owl-carousel__comment {
+	margin-bottom: 24px;
+
+	text-align: center;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 2;
+	color: $gray;
+
+	//Медиа для планшетов и выше
+	@media (min-width: 768px) {
+		margin-bottom: 33px;
+		font-size: 16px;
+		line-height: 2.2;
+	}
+
+	//Медиа для десктопов
+	@media (min-width: 1200px) {
+		line-height: 2.25;
+		margin-bottom: 60px;
+		font-size: 18px;
+	}
+}
+
+.owl-carousel__user {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	//Медиа для планшетов и выше
+	@media (min-width: 768px) {
+	}
+
+	//Медиа для десктопов
+	@media (min-width: 1200px) {
+		flex-direction: row;
+	}
+
+	p {
+		margin-bottom: 29px;
+
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 2;
+		color: $gray;
+
+		//Медиа для планшетов и выше
+		@media (min-width: 768px) {
+		}
+
+		//Медиа для десктопов
+		@media (min-width: 1200px) {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.owl-carousel__user-photo {
+	overflow: hidden;
+
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	margin-bottom: 15px;
+
+	//Медиа для десктопов
+	@media (min-width: 1200px) {
+		margin-right: 40px;
+	}
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
+	}
+}

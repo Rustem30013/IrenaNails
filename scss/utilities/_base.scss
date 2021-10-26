@@ -1,0 +1,26 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    position: relative;
+}
+.section_title{
+    margin-bottom: 15px;
+    h2{
+        font-size: 25px; 
+    }
+    
+}
+.scrollup{
+    position: fixed;
+    z-index: 1;
+    bottom:40px;
+    right: 20px;
+    a{
+        display: block;
+        padding: 10px;
+        background-color: rgba(57, 65, 38, 0.507);
+        text-decoration: none;
+        border-radius: 100%;
+    }
+}
