@@ -91,9 +91,9 @@
                             <h2 data-animation="fadeInUp" data-delay="100ms">Приведи подругу получи скидку 15%</h2>
                             <p data-animation="fadeInUp" data-delay="400ms">Скидка 15% за каждого человека который придет по вашей рекомендации.</p>
                             <ul>
-                                <li><a class="btn akame-btn" href="#gallery">Посмотреть работы</a></li>
-                                <li><a class="btn akame-btn" href="#">Запись в direct</a></li>
-                                <li><a class="btn akame-btn" href="#">Запись в Watsapp</a></li>
+                                <li><a class="btn floating-button" href="#gallery">Посмотреть работы</a></li>
+                                <li><a class="btn floating-button" href="https://www.instagram.com/irena.nails.kzn/">Запись в direct</a></li>
+                                <li><a class="btn floating-button" href="https://wa.me/89655925081?text=Я%20хочу%20записаться%20к%20вам%20на%20маникюр">Запись в Watsapp</a></li>
                             </ul>   
                         </div>
                     </div>
@@ -107,7 +107,7 @@
             <div class="row">
                 <div class="col-xl-12">
                     <div class="section_title text-center mb-75">
-                        <h3>Последние работы</h3>
+                        <h2>Последние работы</h2>
                     </div>
                 </div>
             </div>
@@ -115,46 +115,64 @@
 
         <div class="section-clients__carousel">
             <button id="sliderLeft" class="btn-slider">
-                <i class="btn-arrow-left"></i>
+                <i class="bi bi-chevron-compact-left"></i>
             </button>
             <button id="sliderRight" class="btn-slider">
-                <i class="btn-arrow-right"></i>
+                <i class="bi bi-chevron-compact-right"></i>
             </button>
             <div id="carousel1" class="owl-carousel">
                 <div class="single_gallery ">
                     <a class="popup-image" href="img/gallery/1.jpg"></a>
-                    <img src="img/gallery/1.jpg" alt="">
+                    <img src="img/gallery/1.jpg" alt="маникюр">
                 </div>
                 <div class="single_gallery ">
                     <a class="popup-image" href="img/gallery/2.jpg"></a>
-                    <img src="img/gallery/2.jpg" alt="">
+                    <img src="img/gallery/2.jpg" alt="маникюр">
                 </div>
                 <div class="single_gallery">
                     <a class="popup-image" href="img/gallery/3.jpg"></a>
-                    <img src="img/gallery/3.jpg" alt="">
+                    <img src="img/gallery/3.jpg" alt="маникюр">
                 </div>
         
                 <div class="single_gallery">
                     <a class="popup-image" href="img/gallery/4.jpg"></a>
-                    <img src="img/gallery/4.jpg" alt="">
+                    <img src="img/gallery/4.jpg" alt="маникюр">
                 </div>
                 <div class="single_gallery">
                     <a class="popup-image" href="img/gallery/5.jpg"></a>
-                    <img src="img/gallery/5.jpg" alt="">
+                    <img src="img/gallery/5.jpg" alt="маникюр">
                 </div>
                 <div class="single_gallery">
                     <a class="popup-image" href="img/gallery/6.jpg"></a>
-                    <img src="img/gallery/6.jpg" alt="">
+                    <img src="img/gallery/6.jpg" alt="маникюр">
                 </div>
             </div>
         </div>
+        <div class="container">
+            <div class="row flex-row-reverse">
+                <div class="more">
+                    <p>посмотреть еще</p>
+                    <a class="btn floating-button" href="https://www.instagram.com/irena.nails.kzn/">irena.nails.kzn
+                        <img src="./img/icons/instagram.png" alt="instagram">
+                    </a>
+                </div>
 
+            </div>
+        </div>
 
     </section>
     <!-- Reasons Area Start -->
-    <section id="reasons"class="reasons">
+    <section class="reasons">
         <div class="container">
-            <h2 class="title">Немного о себе </h2>
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section_title text-center mb-75">
+                        <h2>Немного о себе</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
             <div class="row">
                 <div class="col-md-6">
                     <div class="reasons_block">
@@ -238,12 +256,21 @@
         </div>
     </section>
     <!-- Reasons Area End -->
+
     <!-- Pricing Area Start -->
-    <section  id="pricing"class="pricing">
-        <h2 class="title">Мои услуги</h2>
+    <section class="pricing">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section_title text-center mb-75">
+                        <h2>Мои услуги</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="container py-3">
               <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-                <div class="col-sm-12">
+                <div class=" col-lg-4 col-sm-12">
                   <div class="card mb-4 rounded-3 shadow-sm">
                     <div class="card-header py-3">
                       <h4 class="my-0 fw-normal">Маникюр</h4>
@@ -259,7 +286,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-12">
+                <div class="col-lg-4 col-sm-12">
                   <div class="card mb-4 rounded-3 shadow-sm">
                     <div class="card-header py-3">
                       <h4 class="my-0 fw-normal"> Гель-лак</h4>
@@ -276,18 +303,18 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-12">
-                  <div class="card mb-4 rounded-3 shadow-sm border-primary">
-                    <div class="card-header py-3 text-white bg-primary border-primary">
-                      <h4 class="my-0 fw-normal">Доп услуги</h4>
+                <div class="col-lg-4 col-sm-12">
+                  <div class="card mb-4 shadow-sm">
+                    <div class="card-header py-3 ">
+                      <h4 class="my-0 fw-normal">Доп. услуги</h4>
                     </div>
                     <div class="card-body card-body-other">
                       <!-- <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light">/mo</small></h1> -->
                       <ul class="list-unstyled mt-3 mb-4">
-                        <li>Укрепление пудрой-100Р</li>
-                        <li>Доноращивание(1ноготь)-100р</li>
-                        <li>Дизайн (1ноготь)-50р</li>
-                        <li><span>Снятие без последующего покрытия-100Р</span></li> 
+                        <li>Укрепление пудрой-<b>100₽</b></li>
+                        <li>Доноращивание(1ноготь)-<b>100₽</b></li>
+                        <li>Дизайн (1ноготь)-<b>50₽</b></li>
+                        <li>Снятие без последующего покрытия-<b>100₽</b></li> 
                       </ul>
                         <!-- <div>30 users included</div>
                         <div>15 GB of storage</div>
@@ -300,73 +327,22 @@
               </div>
     </section>
     <!-- Pricing Area End -->
-    
-    <!-- Reviews Area Start -->
-    <section id="clients" class="section-clients">
-        <div class="container">
-            <div class="section-clients__titles">
-                <h2 class="section-title">наши клиенты</h2>
-                <h3 class="section-header">Что говорят пользователи</h3>
-            </div>
-            <div class="section-clients__carousel">
-                <button id="sliderLeftClients" class="btn-slider">
-                    <i class="btn-arrow-left"></i>
-                </button>
-                <button id="sliderRightClients" class="btn-slider">
-                    <i class="btn-arrow-right"></i>
-                </button>
-                <div id="carousel2" class="owl-carousel">
-                    <!-- user -->
-                    <div>
-                        <div class="owl-carousel__comment">
-                            <p>У меня классная челка, она развивается на ветру...</p>
-                        </div>
 
-                        <div class="owl-carousel__user">
-                            <div class="owl-carousel__user-photo">
-                                <img src="img/users/user-3.gif" alt="Клиент">
-                            </div>
-                            <p>Айзен Курушита</p>
-                        </div>
-                    </div>
-                    <!-- //user -->
-                    <!-- user -->
-                    <div>
-                        <div class="owl-carousel__comment">
-                            <p>Странная вещь, без "padding-bottom: 1px" либо с "line-height: 2" у ЭТОГО абзаца, у картинки получается обрез внизу... </p>
-                        </div>
-
-                        <div class="owl-carousel__user">
-                            <div class="owl-carousel__user-photo">
-                                <img src="img/users/user-2.jpg" alt="Клиент">
-                            </div>
-                            <p>Александр Боярский</p>
-                        </div>
-                    </div>
-                    <!-- //user -->
-                    <!-- user -->
-                    <div>
-                        <div class="owl-carousel__comment">
-                            <p>Это потрясающее приложение которое помогло мне завершить все мои дела, и сделать дипломный проект раньше срока. </p>
-                        </div>
-
-                        <div class="owl-carousel__user">
-                            <div class="owl-carousel__user-photo">
-                                <img src="img/users/user-1.png" alt="Клиент">
-                            </div>
-                            <p>Николай Остапов</p>
-                        </div>
-                    </div>
-                    <!-- //user -->
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Questions Area Start -->
+    <!-- Questions Area start -->
     <section class="Questions">
         <div class="container">
             <div class="row">
-                <div id="accordion" class="accordion">
+                <div class="col-xl-12">
+                    <div class="section_title text-center mb-75">
+                        <h2>Частые вопросы</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div id="accordion" class="accordion" >
                     <div class=" col-12 accordion-item show">
                       <div class="accordion-item-header">
                         Какая обработка ногтей лучше?
@@ -412,24 +388,27 @@
         </div>
     </section>
     <!-- Questions Area End -->
+
     <!-- suggestions Area End -->
     <section class="suggestions">
         <div class="container">
             <div class="row">
-                <div class="col text-center">
-                    <h2>Интересные предложения</h2> 
-                </div>     
+                <div class="col-xl-12">
+                    <div class="section_title text-center mb-75">
+                        <h2>Интересные <br> предложения</h2>
+                    </div>
+                </div>   
             </div>
             <div class="container">
                 <div class="row">
                     <div class=" col-sm-12 col-md-4">
-                        <img src="./img/suggestions/sug-1.jpg" alt="">
+                        <img src="./img/suggestions/sug-1.jpg" alt="Акция цвета зеленый">
                     </div>
                     <div class=" col-sm-12 col-md-4">
-                        <img src="./img/suggestions/sug-2.jpg" alt="">
+                        <img src="./img/suggestions/sug-3.jpg" alt="Привели подругу">
                     </div>
                     <div class=" col-sm-12 col-md-4">
-                        <img src="./img/suggestions/sug-3.jpg" alt="">
+                        <img src="./img/suggestions/sug-2.jpg" alt="Акция цвета красный">
                     </div>
                 </div>
             </div>
@@ -437,51 +416,19 @@
     </section>
     <!-- suggestions Area End -->
     <!-- Footer Area Start -->
-    <footer id="footer"class="footer-area section-padding-80-0">
+    <footer class="footer-area ">
         <div class="container">
             <div class="row justify-content-between">
 
-                <!-- Single Footer Widget -->
-                <div class="col-12 col-sm-6 col-md-4">
-                    <div class="single-footer-widget mb-80">
-                        <!-- Footer Logo -->
-                        <a href="#" class="footer-logo"><img src="img/core-img/logo.png" alt=""></a>
-                    </div>
+                <div class="map col-lg-6">
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3e1e8e2df3169cec096055b087111797d7f87a496b48a4b54e556688e48096d5&amp;width=400&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
                 </div>
-
-                <!-- Single Footer Widget -->
-                <div class="col-12 col-sm-6 col-md-4 col-xl-3">
-                    <div class="single-footer-widget mb-80">
-                        <!-- Widget Title -->
-                        <h4 class="widget-title">Время работы</h4>
-
-                        <!-- Open Times -->
-                        <div class="open-time">
-                            <p>Пн-ВС 09.00 - 17.00</p>
-                        </div>
-
-                        <!-- Social Info -->
-                        <div class="social-info">
-                            <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Footer Widget -->
-                <div class="col-12 col-md-4 col-xl-3">
-                    <div class="single-footer-widget mb-80">
-
-                        <!-- Widget Title -->
-                        <h4 class="widget-title">Контакты</h4>
-
-                        <!-- Contact Address -->
-                        <div class="contact-address">
-                            <a href="tel:89655925081">8 965 592 50 81</a>
-                            <p>Адрес:Авиатсроительный р-н</p>
-                        </div>
-                    </div>
-                </div>
-
+                <ul class="contacts col-lg-6 d-flex flex-column justify-content-center">
+                    <li>Время работы: ПН-ПТ 9:00 - 19:00 </li>
+                    <li>Адрес:Авиастроительный р-н ул.Лукина</li>
+                    <li><a class="btn floating-button" href="https://www.instagram.com/irena.nails.kzn/">Запись в direct</a></li>
+                    <li><a class="btn floating-button" href="https://wa.me/89655925081?text=Я%20хочу%20записаться%20к%20вам%20на%20маникюр">Запись в Watsapp</a></li>
+                </ul>
             </div>
         </div>
     </footer>

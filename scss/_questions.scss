@@ -1,22 +1,36 @@
+.Questions{
+  padding-bottom:30px; 
+}
+.accordion {
+  border-bottom: 1px solid #ddd;
+	background: linear-gradient(45deg, #EECFBA, #C5DDE8);
+}
+.accordion-item {
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
 .accordion-item-header {
-    padding: 10px 15px;
-    background: #ed5565;
-    color: #fff;
-    cursor: pointer;
-  }
-
-  .accordion-item-content {
-    background: #383838;
-    color: #fff;
-    display: none;
-  }
-
-  .accordion-item.show .accordion-item-content {
-    padding: 10px 15px;
-    display: block;
-  }
-
-  .accordion-item.show .accordion-item-header {
-    background: #da4453;
-    color: #fff;
-  }
+  padding: 10px 15px;
+  background: #f5ed9354;
+  color: rgb(26, 17, 17);
+  cursor: pointer;
+}
+.accordion-item-content {
+  background: #fff;
+  transition: all .6s ease-out;
+  visibility: hidden;
+  height: 0;
+  opacity: 0;
+}
+.accordion-item.show .accordion-item-content {
+  padding: 10px 15px;
+  visibility: visible;
+  height: auto;
+  opacity: 1;
+}
+.accordion-item.show .accordion-item-header {
+  background: #f5ed9354;
+  color: rgb(26, 17, 17);
+  border-bottom: 1px solid #ddd;
+}

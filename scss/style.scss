@@ -1,5 +1,6 @@
 ﻿
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Playfair+Display:400,700');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css");
 
 @import 'bootstrap.min.css';
 @import 'animate.css';
@@ -9,6 +10,7 @@
 @import 'magnific-popup.css';
 @import 'font-awesome.min.css';
 @import 'style.css';
+
 
 // ******
 // Mixins
@@ -23,6 +25,8 @@
 @import "utilities/variables";
 @import "utilities/responsive";
 @import "utilities/color";
+@import "utilities/buttons";
+@import "utilities/base";
 
 
 // **********
@@ -37,5 +41,7 @@
 @import "pricing";
 @import "clients";
 @import "questions";
+@import "suggestions";
+@import "footer";
 
 
