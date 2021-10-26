@@ -56,8 +56,11 @@
   background-color: transparent;
   padding: 0;
 }
+.classy-nav-container .top-header-content p, .classy-nav-container .top-header-content div, .classy-nav-container .top-header-content ul, .classy-nav-container .top-header-content li {
+  position: relative;
+}
 @media only screen and (max-width:767px) {
-  .classy-nav-container .top-header-content p, .classy-nav-container .top-header-content div, .classy-nav-container .top-header-content ul {
+  .classy-nav-container .top-header-content p, .classy-nav-container .top-header-content div, .classy-nav-container .top-header-content ul, .classy-nav-container .top-header-content li {
     font-size: 12px;
   }
 }
@@ -66,8 +69,22 @@
   padding: 5px;
   border-radius: 100%;
 }
-.classy-nav-container .top-header-content .logoinst img {
-  width: 30px;
+.classy-nav-container .top-header-content li::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  top: 0px;
+  left: -10px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.classy-nav-container .top-header-content .logoinst::before {
+  background-image: url(".././img/icons/instagram.png");
+}
+.classy-nav-container .top-header-content .whatsapp::before {
+  background-image: url(".././img/icons/whatsap.png");
 }
 .classy-nav-container .classy-navbar {
   -webkit-transition-duration: 500ms;

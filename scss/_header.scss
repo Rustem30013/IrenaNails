@@ -5,7 +5,8 @@
     padding: 0;
 
     .top-header-content{
-        p,div,ul{
+        p,div,ul,li{
+            position: relative;
             @media #{$breakpoint-xs} {
                 font-size: 12px;
             }
@@ -17,8 +18,25 @@
                 border-radius:100%;
             }
         }
-        .logoinst img{
-            width: 30px
+
+        li::before{
+            position: absolute;
+            content: "";
+            width: 20px;
+            height: 20px;
+            // background-color: red;
+            top: 0px;
+            left: -10px;
+        
+            background-repeat: no-repeat ;
+            background-size: contain;
+            background-position: center;
+        }
+        .logoinst::before{
+            background-image: url(".././img/icons/instagram.png");
+        }
+        .whatsapp::before{
+            background-image: url(".././img/icons/whatsap.png");
         }
     }
     .classy-navbar {
