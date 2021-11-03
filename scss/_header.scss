@@ -1,8 +1,11 @@
 /* :: 7.0 Header CSS */
 
 .classy-nav-container {
-    background-color: transparent;
+    background-color:#999999; 
     padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
 
     .top-header-content{
         p,div,ul,li{
@@ -16,6 +19,9 @@
                 width: 100px;
                 padding: 5px;
                 border-radius:100%;
+                @media #{$breakpoint-xs}{
+                    width: 75px;
+                }
             }
         }
 
@@ -41,17 +47,17 @@
     }
     .classy-navbar {
         @include transition-duration(500ms);
-        height: 100px;
+        height: 80px;
         padding: 0;
 
         
 
         @media #{$breakpoint-md} {
-            height: 70px;
+            height: 90px;
         }
 
         @media #{$breakpoint-xs} {
-            height: 100px;
+            height: 70px;
         }
 
         .nav-brand {

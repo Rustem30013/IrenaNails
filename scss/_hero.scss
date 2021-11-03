@@ -1,28 +1,76 @@
 /* :: 8.0 Hero CSS */
 .Welcome-area{
     height: 100vh;
+    background-image: url(../img/bg/welcome-bg3.jpg);
+    background-size: 100%;
+    background-position: 70%;
+    background-repeat: no-repeat;
+
+    position: relative;
+    &::before{
+        position: absolute;
+        display: block;
+        content: "";
+        width: 100%;
+        height: 100%;
+		background-color: #af989883;
+        top: 0px;
+        left: 0px;
+    }
+    .Welcome-area-left{
+        .sub-title{
+            font-size: 26px;
+        }
+        .list-promo{
+            max-width: 400px;
+            font-size: 20px;
+            border-radius:5px;
+            background-color:antiquewhite;
+            border-bottom:dotted #ce6c6c83 3px;
+            padding-bottom: 50px;
+        }
+    }
+    .welcome-area-right{
+        max-width: 400px;
+        background-color:aliceblue;
+        border-radius:10px;
+        padding: 10px;
+        ul{
+            margin: 0px;
+        }
+    }
     .welcome-content{
-        padding-top: 90px;
-        background-image: url(../img/bg/welcome-bg1.jpg);
-        background-size: auto;
-        background-position: 70%;
-        background-repeat: no-repeat;
+        // margin-top: 150px;
+        padding-top: 300px;
+        @media #{$breakpoint-sm} {
+            padding-top: 70px;
+        }
+        @media #{$breakpoint-xs} {
+            padding-top: 100px;
+        }
+
     
             position: relative;
             z-index: 2;
-        
+        .welcome-text{
+            @media #{$breakpoint-xs} {
+                flex-direction: column;
+            }
+
+        }
             h2 {
-                font-size: 72px;
+                font-size: 70px;
                 display: block;
-                margin-bottom: 30px;
+                // margin-top:500px ;
+                margin-bottom: 0px;
                 color: rgb(27, 23, 23);
         
                 @media #{$breakpoint-lg} {
-                    font-size: 60px;
+                    font-size: 50px;
                 }
                 
                 @media #{$breakpoint-md} {
-                    font-size: 60px;
+                    font-size: 50px;
                 }
                 
                 @media #{$breakpoint-xs} {
@@ -40,6 +88,11 @@
                 margin: 0px;
             }
     }
+}
+
+
+.modal h2{
+    font-size: 16px;
 }
 
 
