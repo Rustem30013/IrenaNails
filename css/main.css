@@ -1,4 +1,32 @@
 @charset "UTF-8";
+@font-face {
+  font-family: 'Century Gothic';
+  src: url("../fonts/CenturyGothic/CenturyGothic-Italic.eot");
+  src: local("Century Gothic Italic"), local("CenturyGothic-Italic"), url("../fonts/CenturyGothic/CenturyGothic-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/CenturyGothic/CenturyGothic-Italic.woff") format("woff"), url("../fonts/CenturyGothic/CenturyGothic-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Century Gothic';
+  src: url("../fonts/CenturyGothic/CenturyGothic.eot");
+  src: local("Century Gothic"), local("CenturyGothic"), url("../fonts/CenturyGothic/CenturyGothic.eot?#iefix") format("embedded-opentype"), url("../fonts/CenturyGothic/CenturyGothic.woff") format("woff"), url("../fonts/CenturyGothic/CenturyGothic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Century Gothic';
+  src: url("../fonts/CenturyGothic/CenturyGothic-Bold.eot");
+  src: local("Century Gothic Bold"), local("CenturyGothic-Bold"), url("../fonts/CenturyGothic/CenturyGothic-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/CenturyGothic/CenturyGothic-Bold.woff") format("woff"), url("../fonts/CenturyGothic/CenturyGothic-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Century Gothic';
+  src: url("../fonts/CenturyGothic/CenturyGothic-BoldItalic.eot");
+  src: local("Century Gothic Bold Italic"), local("CenturyGothic-BoldItalic"), url("../fonts/CenturyGothic/CenturyGothic-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/CenturyGothic/CenturyGothic-BoldItalic.woff") format("woff"), url("../fonts/CenturyGothic/CenturyGothic-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic; }
+
 header .list-unstyled {
   color: white; }
 
@@ -11,15 +39,32 @@ header .list-unstyled {
   border-radius: 50%;
   margin-right: 10px; }
 
-@media (max-width: 767px) {
-  .hero {
-    background: no-repeat url("../img/bg/bg_hero1meta.jpg");
-    background-color: #ffffff;
-    background-size: 100%;
-    background-position: 10% 30%; } }
+.hero {
+  background: no-repeat url("../img/bg/bg_hero1meta.png");
+  background-color: #ffffff;
+  color: #fff;
+  background-size: 150%;
+  background-position: 10% 30%;
+  font-family: 'Century Gothic'; }
+  @media (max-width: 767px) {
+    .hero {
+      text-align: center; } }
+  .hero__top-text {
+    width: 270px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    font-size: 14px; }
+  @media mobile_divece {
+    .hero .wrapper-foto {
+      width: 150px;
+      height: 200px;
+      margin: 0 auto;
+      overflow: hidden; } }
 
 .hero .bg_whatsapp, .pricing-button .bg_whatsapp {
-  background: #198754; }
+  background: #f5f5f5;
+  color: #160e0e;
+  font-size: 14px; }
 
 .hero .bg_instargam, .pricing-button .bg_instargam {
   background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
@@ -49,6 +94,9 @@ header .list-unstyled {
 .album h2 {
   margin-bottom: 1.5rem;
   text-align: center; }
+  @media (max-width: 767px) {
+    .album h2 {
+      text-align: left; } }
 
 /* Слайдер */
 /* Слайдер запущен */
